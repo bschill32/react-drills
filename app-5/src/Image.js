@@ -1,11 +1,63 @@
-import React, { Component } from 'react';
+import React from 'react'
 
-function Image(props) {
-    return (
-        <div>
-            <img src={props.myImage} alt=""></img>
-        </div>
+export default function Image(props){
+    return(
+       <div>
+            <img src={props.img} alt="photo" width='1000px'/>
+       </div> 
     )
 }
 
-export default Image;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import React, { Component } from 'react';
+
+// function Image(props) {
+//     return (
+//         <div>
+//             <img src={props.myImage} alt=""></img>
+//         </div>
+//     )
+// }
+
+// export default Image;

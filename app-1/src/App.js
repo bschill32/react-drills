@@ -1,55 +1,133 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import logo from "./logo.svg";
+import "./App.css";
 
-class App extends Component {
-  constructor() {
-    super();
-
+export default class App extends Component {
+  constructor(){
+    super()
     this.state = {
-      message: ""
+      userInput: ''
     }
   }
 
-  handleChange(value) {
+  handleChange = (value) => {
     this.setState({
-      message: value
+      userInput: value
     })
   }
 
   render() {
     return (
       <div className="App">
-        <input onChange={(e) => this.handleChange(e.target.value)}></input>
-        <p>{this.state.message}</p>
+        <h1>It's working!</h1>
+        <input type='text' onChange={(e)=>{this.handleChange(e.target.value)}}></input>
+        <h1>{this.state.userInput}</h1>
       </div>
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import React, { Component } from 'react';
+// import logo from './logo.svg';
+// import './App.css';
+
 // class App extends Component {
 //   constructor() {
 //     super();
 
 //     this.state = {
-//       text: ""
+//       message: ""
 //     }
 //   }
 
 //   handleChange(value) {
 //     this.setState({
-//       text: value
+//       message: value
 //     })
 //   }
-
 
 //   render() {
 //     return (
 //       <div className="App">
-//         <input onChange={(e) => this.handleChange(e.target.value)}/>
-//         <p>{this.state.text}</p>
+//         <input onChange={(e) => this.handleChange(e.target.value)}></input>
+//         <p>{this.state.message}</p>
 //       </div>
 //     );
 //   }
 // }
+// // class App extends Component {
+// //   constructor() {
+// //     super();
 
-export default App;
+// //     this.state = {
+// //       text: ""
+// //     }
+// //   }
+
+// //   handleChange(value) {
+// //     this.setState({
+// //       text: value
+// //     })
+// //   }
+
+
+// //   render() {
+// //     return (
+// //       <div className="App">
+// //         <input onChange={(e) => this.handleChange(e.target.value)}/>
+// //         <p>{this.state.text}</p>
+// //       </div>
+// //     );
+// //   }
+// // }
+
+// export default App;

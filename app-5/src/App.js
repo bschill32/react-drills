@@ -1,16 +1,82 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
-import Image from './Image';
+import React, { Component } from "react";
+import "./App.css";
+import Image from './Image'
 
 class App extends Component {
+  constructor(){
+    super()
+    this.state = {
+      url: 'https://images.unsplash.com/photo-1500520198921-6d4704f98092?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3325&q=80'
+    }
+  }
+
   render() {
     return (
       <div className="App">
-        <Image myImage={"https://images.unsplash.com/photo-1540207738393-f771d46a71ca?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0e8fe1eb2f876f9552f6ac8e8009ea32&auto=format&fit=crop&w=1200&q=60"}></Image>
+        <Image img={this.state.url}/>
+
       </div>
     );
   }
 }
 
 export default App;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import React, { Component } from 'react';
+// import logo from './logo.svg';
+// import './App.css';
+// import Image from './Image';
+
+// class App extends Component {
+//   render() {
+//     return (
+//       <div className="App">
+//         <Image myImage={"https://images.unsplash.com/photo-1540207738393-f771d46a71ca?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0e8fe1eb2f876f9552f6ac8e8009ea32&auto=format&fit=crop&w=1200&q=60"}></Image>
+//       </div>
+//     );
+//   }
+// }
+
+// export default App;
